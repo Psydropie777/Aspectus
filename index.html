@@ -24,7 +24,14 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/Custom.css">
     <style>
-
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: scroll; /* prevents scrolling */
+            position: fixed; /* locks body in place */
+            width: 100%;
+        }
 
         .banner-caption {
             padding: 40px;
@@ -77,7 +84,6 @@
             background-color: #ffffff;
             margin: 10% auto;
             padding: 30px;
-            border: 4px solid #002449;
             border-radius: 12px;
             width: 80%;
             max-width: 550px;
@@ -102,15 +108,36 @@
             .close:hover {
                 color: #16A0CE;
             }
+        .container-static {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services-static {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 20px;
+        }
+
+        .service-item {
+            display: inline-block;
+            vertical-align: top;
+            width: 400px;
+            height: 400px; /* Fill grid cell */
+            margin: 1%;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+        }
+
     </style>
 
 </head>
 
 <body class="is-preload">
-
     <!-- Wrapper -->
     <div id="wrapper">
-
         <!-- Main -->
         <div id="main">
             <div class="inner">
@@ -118,7 +145,7 @@
                 <!-- Header -->
                 <header id="header">
                     <div class="logo">
-                        <a href="index.html">Aspectus <img src="assets/images/logo2_1.png" alt="Aspectus Logo" style="height: 120px; width: 120px"></a>
+                        <a href="index.html" style="font-family: 'Arial'; font-weight: 600; ">Aspectus <img src="assets/images/logo2_1.png" alt="Aspectus Logo" style="height: 120px; width: 120px"></a>
                     </div>
                 </header>
 
@@ -128,7 +155,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="banner-content">
-                                    <div class="row">
+                                    <div class="row" style="flex:content">
                                         <div class="col-md-12">
                                             <div class="banner-caption">
                                                 <h4>Hello, welcome to <em>Aspectus</em>.</h4>
@@ -155,8 +182,8 @@
                 </section>
                 <!-- Services -->
                 <section class="services">
-                    <div class="container-fluid">
-                        <div class="row">
+                    <div class="container-static">
+                        <div class="row services-static">
                             <div class="col-md-4">
                                 <div class="service-item seventh-item">
                                     <div class="icon"></div>
@@ -172,7 +199,7 @@
                                 <div class="service-item second-item">
                                     <div class="icon"></div>
                                     <h4>Business Consulting</h4>
-                                    <p>"Empowering Strategy. Optimizing Performance. Fueling Growth."</p>
+                                    <p>"Empowering Strategy. Optimizing Performance. Fueling Growth. And More"</p>
                                     <div class="primary-button">
                                         <a href="#" id="openBCModal">Read More</a>
                                     </div>
@@ -220,88 +247,89 @@
                             </div>
                         </div>
                     </div>
+                    <!-- All Modals -->
+
+                    <div id="myASModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeASModal">&times;</span>
+                            <h2>Academy Services</h2>
+                            <p>
+                                Whether you're onboarding new talent or reskilling current employees, Aspectus Academy is your partner in building a future-proof workforce.<br />
+                                •	Leadership development programs <br />
+                                •	Soft skills and professional conduct training<br />
+                                •	Workplace readiness programs<br />
+                                •	Mentorship and coaching<br />
+                                •	Technical upskilling and cross-training<br />
+                                •	Performance and personal growth coaching<br />
+                                •	Emotional intelligence and team building<br />
+                                •	Pay-it-forward service training<br />
+                                •	Customized corporate training modules<br />
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div id="myBCModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeBCModal">&times;</span>
+                            <h2>Business Consulting</h2>
+                            <p>
+                                •	Business strategy and advisory
+                                •	Operational execution and optimization
+                                •	Process improvement and innovation
+                                •	Business performance audits
+                                •	SME and entrepreneur support
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="myHRModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeHRModal">&times;</span>
+                            <h2>HR Services</h2>
+                            <p>
+                                •	Recruitment and talent management
+                                •	Workforce planning and development
+                                •	HR compliance and policy development
+                                •	Employee wellness and retention strategies
+                                •	End-to-end payroll services
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="myBPOModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeBPOModal">&times;</span>
+                            <h2>Business Process Outsourcing</h2>
+                            <p>
+                                •	Customer service and support
+                                •	Inbound/Outbound call center operations
+                                •	Administrative and virtual assistance
+                                •	Specialized back-office support
+                                •	Debt collection services
+                                •	Logistics coordination
+                                •	Recruitment process outsourcing
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="myGiTModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeGiTModal">&times;</span>
+                            <h2>Get in Touch</h2>
+                            <p>We’re always ready to connect. Find us on Facebook, LinkedIn, or email us directly. Your questions, feedback, and ideas matter to us.</p>
+                        </div>
+                    </div>
+
+                    <div id="mySaWModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeSaWModal">&times;</span>
+                            <h2>Spread the Word</h2>
+                            <p>Aspectus grows through community. Share our mission, refer a friend, or become an ambassador. Help us change lives, one connection at a time.</p>
+                        </div>
+                    </div>
                 </section>
-                <!-- All Modals -->
 
-                <div id="myASModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" id="closeASModal">&times;</span>
-                        <h2>Academy Services</h2>
-                        <p>
-                            Whether you're onboarding new talent or reskilling current employees, Aspectus Academy is your partner in building a future-proof workforce.<br/>
-                            •	Leadership development programs <br />
-                            •	Soft skills and professional conduct training<br />
-                            •	Workplace readiness programs<br />
-                            •	Mentorship and coaching<br />
-                            •	Technical upskilling and cross-training<br />
-                            •	Performance and personal growth coaching<br />
-                            •	Emotional intelligence and team building<br />
-                            •	Pay-it-forward service training<br />
-                            •	Customized corporate training modules<br />
-                        </p>
-                    
-                    </div>
-                </div>
-
-                <div id="myBCModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" id="closeBCModal">&times;</span>
-                        <h2>Business Consulting</h2>
-                        <p>
-                            •	Business strategy and advisory
-                            •	Operational execution and optimization
-                            •	Process improvement and innovation
-                            •	Business performance audits
-                            •	SME and entrepreneur support
-                        </p>
-                    </div>
-                </div>
-
-                <div id="myHRModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" id="closeHRModal">&times;</span>
-                        <h2>HR Services</h2>
-                        <p>
-                            •	Recruitment and talent management
-                            •	Workforce planning and development
-                            •	HR compliance and policy development
-                            •	Employee wellness and retention strategies
-                            •	End-to-end payroll services
-                        </p>
-                    </div>
-                </div>
-
-                <div id="myBPOModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" id="closeBPOModal">&times;</span>
-                        <h2>Business Process Outsourcing</h2>
-                        <p>
-                            •	Customer service and support
-                            •	Inbound/Outbound call center operations
-                            •	Administrative and virtual assistance
-                            •	Specialized back-office support
-                            •	Debt collection services
-                            •	Logistics coordination
-                            •	Recruitment process outsourcing
-                        </p>
-                    </div>
-                </div>
-
-                <div id="myGiTModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" id="closeGiTModal">&times;</span>
-                        <h2>Get in Touch</h2>
-                        <p>We’re always ready to connect. Find us on Facebook, LinkedIn, or email us directly. Your questions, feedback, and ideas matter to us.</p>
-                    </div>
-                </div>
-
-                <div id="mySaWModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" id="closeSaWModal">&times;</span>
-                        <h2>Spread the Word</h2>
-                        <p>Aspectus grows through community. Share our mission, refer a friend, or become an ambassador. Help us change lives, one connection at a time.</p>
-                    </div>
-                </div>
 
                 <!-- Top Image -->
                 <section class="top-image">
@@ -448,36 +476,57 @@
     <script src="assets/js/custom.js"></script>
     <!-- Modal Script -->
     <script>
-    const modals = [
-        {openId: 'openModal', modalId: 'myModal', closeId: 'closeModal'},
-        { openId: 'openASModal', modalId: 'myASModal', closeId: 'closeASModal' },
-        { openId: 'openBCModal', modalId: 'myBCModal', closeId: 'closeBCModal' },
-        { openId: 'openHRModal', modalId: 'myHRModal', closeId: 'closeHRModal' },
-        { openId: 'openBPOModal', modalId: 'myBPOModal', closeId: 'closeBPOModal' },
-        { openId: 'openGiTModal', modalId: 'myGiTModal', closeId: 'closeGiTModal' },
-        { openId: 'openSaWModal', modalId: 'mySaWModal', closeId: 'closeSaWModal' }
-  ];
+        const modals = [
+            { openId: 'openModal', modalId: 'myModal', closeId: 'closeModal' },
+            { openId: 'openASModal', modalId: 'myASModal', closeId: 'closeASModal' },
+            { openId: 'openBCModal', modalId: 'myBCModal', closeId: 'closeBCModal' },
+            { openId: 'openHRModal', modalId: 'myHRModal', closeId: 'closeHRModal' },
+            { openId: 'openBPOModal', modalId: 'myBPOModal', closeId: 'closeBPOModal' },
+            { openId: 'openGiTModal', modalId: 'myGiTModal', closeId: 'closeGiTModal' },
+            { openId: 'openSaWModal', modalId: 'mySaWModal', closeId: 'closeSaWModal' }
+        ];
 
-  modals.forEach(({ openId, modalId, closeId }) => {
-    const openBtn = document.getElementById(openId);
-    const modal = document.getElementById(modalId);
-    const closeBtn = document.getElementById(closeId);
+        const modalElements = {};
 
-    openBtn.onclick = function (e) {
-      e.preventDefault();
-      modal.style.display = "block";
-    };
+        modals.forEach(({ openId, modalId, closeId }) => {
+            const openBtn = document.getElementById(openId);
+            const modal = document.getElementById(modalId);
+            const closeBtn = document.getElementById(closeId);
 
-    closeBtn.onclick = function () {
-      modal.style.display = "none";
-    };
+            modalElements[modalId] = modal;
 
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    };
-  });</script>
+            if (openBtn && modal) {
+                openBtn.onclick = function (e) {
+                    e.preventDefault();
+                    modal.style.display = "block";
+                };
+            }
+
+            if (closeBtn && modal) {
+                closeBtn.onclick = function () {
+                    modal.style.display = "none";
+                };
+            }
+        });
+
+        // Close modals when clicking outside the modal content
+        window.onclick = function (event) {
+            Object.values(modalElements).forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        };
+
+        // Optional: Close on Esc key
+        window.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+                Object.values(modalElements).forEach(modal => {
+                    modal.style.display = "none";
+                });
+            }
+        });
+    </script>
 
 </body>
 
