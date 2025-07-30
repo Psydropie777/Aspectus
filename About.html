@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+    <script>(function(){
+      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+    })();</script>
 
 </head>
 
@@ -69,13 +72,13 @@
                                         To upskill, train, mentor, build, and empower individuals to become the next generation of leaders—transforming lives and strengthening businesses through people-centered solutions.
                                     </p>
                                     <br />
-                                  
+
                                     <h2 style="text-align: center; margin: 0 auto;">Our Vision</h2>
                                     <p>
                                         A world where potential is nurtured, talent is recognized, and every person has the opportunity to succeed—creating ripple effects that uplift families, businesses, and communities.
                                     </p>
                                     <br />
-                                 
+
                                     <h2 style="text-align: center; margin: 0 auto;">Our Core Values</h2>
                                     <ul>
                                         <li>Empowerment: We believe in people and their ability to change their own lives.</li>
@@ -85,7 +88,7 @@
                                         <li>Service: We lead with heart, always putting people first.</li>
                                     </ul>
                                     <br />
-                                  
+
                                     <h2 style="text-align: center; margin: 0 auto;">Who We Serve</h2>
                                     <ul>
                                         <li> Businesses: Seeking skilled, motivated, multiskilled professionals.</li>
@@ -103,7 +106,7 @@
 
 
 
-            
+
 
                 <!-- Contact Form -->
                 <section class="contact-form">
@@ -138,13 +141,12 @@
                             <div class="col-md-6">
                                 <div id="map">
                                     <!-- How to change your own map point
-           1. Go to Google Maps
-           2. Click on your location point
-           3. Click "Share" and choose "Embed map" tab
-           4. Copy only URL and paste it within the src="" field below
-    -->
-              
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.1840567394484!2d31.038379811356933!3d-29.785491674951018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef707af425d8cc9%3A0xacc2e2274097e7d8!2sDurban%20North%20Office%20Park!5e1!3m2!1sen!2sza!4v1753886973386!5m2!1sen!2sza" width="100%" height="420px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                           1. Go to Google Maps
+                                           2. Click on your location point
+                                           3. Click "Share" and choose "Embed map" tab
+                                           4. Copy only URL and paste it within the src="" field below
+                                    -->
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.637728914887!2d31.0096356!3d-29.800280399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef706dff121f2b7%3A0xf8989162d33fe1a3!2s103%20Marseilles%20Cres%2C%20Briardene%2C%20Durban%20North%2C%204051!5e1!3m2!1sen!2sza!4v1753892868590!5m2!1sen!2sza" width="100%" height="420px" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -222,6 +224,16 @@
     <script src="assets/js/transition.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+    document.getElementById("contact").addEventListener("submit", function(e) {
+      e.preventDefault();
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+        .then(function() {
+          document.getElementById("status").innerHTML = "<span style='color: green;'>Message sent successfully!</span>";
+        }, function(error) {
+          document.getElementById("status").innerHTML = "<span style='color: red;'>Failed to send message. Try again.</span>";
+        });
+    });</script>
 </body>
 
 
