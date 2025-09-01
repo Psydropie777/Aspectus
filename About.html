@@ -85,7 +85,7 @@
                                         •	Inclusivity: We provide opportunities for those often overlooked or underserved.<br />
                                         •	Service: We lead with heart, always putting people first.
                                     </p>
-                               
+
                                     <br />
 
                                     <h2 style="text-align: center; margin: 0 auto;">Who We Serve</h2>
@@ -140,13 +140,173 @@
                             <div class="col-md-6">
                                 <div id="map">
                                     <!-- How to change your own map point
-                               1. Go to Google Maps
-                               2. Click on your location point
-                               3. Click "Share" and choose "Embed map" tab
-                               4. Copy only URL and paste it within the src="" field below
-                        -->
+                                           1. Go to Google Maps
+                                           2. Click on your location point
+                                           3. Click "Share" and choose "Embed map" tab
+                                           4. Copy only URL and paste it within the src="" field below
+                                    -->
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.637728914887!2d31.0096356!3d-29.800280399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef706dff121f2b7%3A0xf8989162d33fe1a3!2s103%20Marseilles%20Cres%2C%20Briardene%2C%20Durban%20North%2C%204051!5e1!3m2!1sen!2sza!4v1753892868590!5m2!1sen!2sza" width="100%" height="420px" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Client Intake Multi-Step Form -->
+                <section class="client-intake">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-heading">
+                                    <h2>Website Development Client Intake Questionnaire</h2>
+                                </div>
+
+                                <form id="intakeForm" action="#" method="post">
+                                    <!-- Slides Wrapper -->
+                                    <div class="form-slides">
+
+                                        <!-- Slide 1: Business Info -->
+                                        <div class="slide active">
+                                            <h4>Business Information</h4>
+                                            <div class="form-group">
+                                                <label>Business Name:</label>
+                                                <input type="text" name="business_name" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Contact Person:</label>
+                                                <input type="text" name="contact_person" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Email:</label>
+                                                <input type="email" name="email" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Phone:</label>
+                                                <input type="text" name="phone" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Website (if any):</label>
+                                                <input type="text" name="website" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <!-- Slide 2: Project Goals -->
+                                        <div class="slide">
+                                            <h4>Project Goals</h4>
+                                            <p>Main purpose of your website?</p>
+                                            <div class="form-check"><input type="checkbox" name="purpose" value="Profile" class="form-check-input"> Company Profile</div>
+                                            <div class="form-check"><input type="checkbox" name="purpose" value="Leads" class="form-check-input"> Generate Leads</div>
+                                            <div class="form-check"><input type="checkbox" name="purpose" value="Ecommerce" class="form-check-input"> Sell Products Online</div>
+                                            <div class="form-check"><input type="checkbox" name="purpose" value="Blog" class="form-check-input"> Blog / News</div>
+                                            <div class="form-check"><input type="checkbox" name="purpose" value="Other" class="form-check-input"> Other</div>
+                                        </div>
+
+                                        <!-- Slide 3: Scope & Content -->
+                                        <div class="slide">
+                                            <h4>Scope & Content</h4>
+                                            <p>How many pages?</p>
+                                            <div class="form-check"><input type="radio" name="pages" value="Basic" class="form-check-input"> 1–5</div>
+                                            <div class="form-check"><input type="radio" name="pages" value="Standard" class="form-check-input"> 6–10</div>
+                                            <div class="form-check"><input type="radio" name="pages" value="Advanced" class="form-check-input"> 11–20</div>
+                                            <div class="form-check"><input type="radio" name="pages" value="Premium" class="form-check-input"> 20+</div>
+
+                                            <p class="mt-3">Do you have content ready?</p>
+                                            <div class="form-check"><input type="radio" name="content_ready" value="Yes" class="form-check-input"> Yes</div>
+                                            <div class="form-check"><input type="radio" name="content_ready" value="No" class="form-check-input"> No</div>
+
+                                            <p class="mt-3">Need a blog/news section?</p>
+                                            <div class="form-check"><input type="radio" name="need_blog" value="Yes" class="form-check-input"> Yes</div>
+                                            <div class="form-check"><input type="radio" name="need_blog" value="No" class="form-check-input"> No</div>
+                                        </div>
+
+                                        <!-- Slide 4: Features -->
+                                        <div class="slide">
+                                            <h4>Features & Functionality</h4>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-check"><input type="checkbox" name="features" value="Chat" class="form-check-input"> Live Chat</div>
+                                                    <div class="form-check"><input type="checkbox" name="features" value="Map" class="form-check-input"> Google Maps</div>
+                                                    <div class="form-check"><input type="checkbox" name="features" value="Form" class="form-check-input"> Contact Form</div>
+                                                    <div class="form-check"><input type="checkbox" name="features" value="Membership" class="form-check-input"> Membership System</div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-check"><input type="checkbox" name="features" value="Ecommerce" class="form-check-input"> Online Store</div>
+                                                    <div class="form-check"><input type="checkbox" name="features" value="MultiLang" class="form-check-input"> Multi-language</div>
+                                                    <div class="form-check"><input type="checkbox" name="features" value="SEO" class="form-check-input"> SEO Optimization</div>
+                                                    <div class="form-check"><input type="checkbox" name="features" value="Branding" class="form-check-input"> Branding Kit</div>
+                                                </div>
+                                            </div>
+
+                                            <p class="mt-3">Need user accounts / login?</p>
+                                            <div class="form-check"><input type="radio" name="user_accounts" value="Yes" class="form-check-input"> Yes</div>
+                                            <div class="form-check"><input type="radio" name="user_accounts" value="No" class="form-check-input"> No</div>
+                                        </div>
+
+                                        <!-- Slide 5: Design -->
+                                        <div class="slide">
+                                            <h4>Design & Branding</h4>
+                                            <p>Do you already have a logo?</p>
+                                            <div class="form-check"><input type="radio" name="branding" value="Yes" class="form-check-input"> Yes</div>
+                                            <div class="form-check"><input type="radio" name="branding" value="No" class="form-check-input"> No</div>
+
+                                            <div class="form-group mt-3">
+                                                <label>Websites you like for inspiration:</label>
+                                                <textarea name="inspiration" class="form-control" rows="3"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <!-- Slide 6: Budget -->
+                                        <div class="slide">
+                                            <h4>Budget & Timeline</h4>
+                                            <p>Estimated budget range?</p>
+                                            <div class="form-check"><input type="radio" name="budget" value="5-10k" class="form-check-input"> R5,000 – R10,000</div>
+                                            <div class="form-check"><input type="radio" name="budget" value="10-25k" class="form-check-input"> R10,000 – R25,000</div>
+                                            <div class="form-check"><input type="radio" name="budget" value="25-50k" class="form-check-input"> R25,000 – R50,000</div>
+                                            <div class="form-check"><input type="radio" name="budget" value="50k+" class="form-check-input"> R50,000+</div>
+
+                                            <p class="mt-3">When to go live?</p>
+                                            <div class="form-check"><input type="radio" name="timeline" value="1-2w" class="form-check-input"> 1–2 weeks</div>
+                                            <div class="form-check"><input type="radio" name="timeline" value="1m" class="form-check-input"> 1 month</div>
+                                            <div class="form-check"><input type="radio" name="timeline" value="2-3m" class="form-check-input"> 2–3 months</div>
+                                            <div class="form-check"><input type="radio" name="timeline" value="flexible" class="form-check-input"> Flexible</div>
+                                        </div>
+
+                                        <!-- Slide 7: Ongoing Support -->
+                                        <div class="slide">
+                                            <h4>Ongoing Support</h4>
+                                            <p>Do you require maintenance?</p>
+                                            <div class="form-check"><input type="radio" name="maintenance" value="Monthly" class="form-check-input"> Yes, monthly</div>
+                                            <div class="form-check"><input type="radio" name="maintenance" value="Occasional" class="form-check-input"> Occasionally</div>
+                                            <div class="form-check"><input type="radio" name="maintenance" value="No" class="form-check-input"> No</div>
+
+                                            <p class="mt-3">Do you want SEO services?</p>
+                                            <div class="form-check"><input type="radio" name="seo_service" value="Yes" class="form-check-input"> Yes</div>
+                                            <div class="form-check"><input type="radio" name="seo_service" value="No" class="form-check-input"> No</div>
+                                        </div>
+
+                                        <!-- Slide 8: Final Notes -->
+                                        <div class="slide">
+                                            <h4>Final Notes</h4>
+                                            <textarea name="final_notes" class="form-control" rows="4"></textarea>
+                                        </div>
+
+                                        <!-- Slide 9: Review -->
+                                        <div class="slide">
+                                            <h4>Review Your Answers</h4>
+                                            <div id="reviewContent"></div>
+                                            <p class="text-muted">Please confirm everything is correct before submitting.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Navigation Buttons -->
+                                    <div class="form-navigation mt-3">
+                                        <button type="button" id="prevBtn" class="btn btn-secondary">Back</button>
+                                        <button type="button" id="nextBtn" class="btn btn-primary">Next</button>
+                                        <button type="submit" id="submitBtn" class="btn btn-success d-none">Submit</button>
+                                    </div>
+                                </form>
+
                             </div>
                         </div>
                     </div>
@@ -172,6 +332,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="About.html">About</a></li>
+                        <li><a href="WebDev.html">Wed Dev</a></li>
                     </ul>
                 </nav>
 
@@ -204,7 +365,15 @@
 
                 <!-- Footer -->
                 <footer id="footer">
-                    <p class="copyright">Copyright &copy; 2019 Aspectus
+
+                    <p class="copyright">
+                        <br>Whatsapp:  <a rel="nofollow">+27 74 576 9717 </a>
+                        <br>Landline:  <a rel="nofollow">+27 10 035 3905</a>
+                        <br>Email:  <a rel="nofollow" href="email:info@aspectus.co.za">info@aspectus.co.za </a>
+                        <br>Facebook:  <a rel="nofollow" href="https://www.facebook.com/profile.php?id=61578974967846">@Aspectus</a>
+                        <br>
+                        <br> Copyright &copy; 2019 Aspectus
+                    </p>
 
                 </footer>
 
@@ -223,6 +392,54 @@
     <script src="assets/js/transition.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <!-- Script for Multi-Step -->
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const submitBtn = document.getElementById('submitBtn');
+        const form = document.getElementById('intakeForm');
+        const reviewContent = document.getElementById('reviewContent');
+
+        function showSlide(n) {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === n) ? 'block' : 'none';
+            });
+            prevBtn.style.display = (n === 0) ? 'none' : 'inline-block';
+            nextBtn.style.display = (n === slides.length - 1) ? 'none' : 'inline-block';
+            submitBtn.classList.toggle('d-none', n !== slides.length - 1);
+        }
+
+        function generateReview() {
+            const formData = new FormData(form);
+            let html = '<ul class="list-group">';
+            for (let [key, value] of formData.entries()) {
+                html += `<li class="list-group-item"><strong>${key}:</strong> ${value}</li>`;
+            }
+            html += '</ul>';
+            reviewContent.innerHTML = html;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                if (currentSlide === slides.length - 1) generateReview();
+                showSlide(currentSlide);
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        });
+
+        showSlide(currentSlide);
+    </script>
 </body>
 
 
